@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mundo Mágico - Um lugar encantado onde a diversão e o aprendizado se encontram! Experiências inesquecíveis para crianças.">
+    <meta name="keywords" content="crianças, diversão, educação infantil, mundo mágico, brincadeiras, aprendizado">
+    <meta name="author" content="Mundo Mágico">
+    <meta name="theme-color" content="#7c3aed">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mundo Mágico - Onde Sonhos Viram Realidade! ✨">
+    <meta property="og:description" content="Um lugar encantado onde a diversão e o aprendizado se encontram!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+    
+    <title>Mundo Mágico ✨ | Onde Sonhos Viram Realidade!</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Mundo Mágico",
+        "description": "Um lugar encantado onde a diversão e o aprendizado se encontram!",
+        "url": "https://mundomagico.com.br"
+    }
+    </script>
+</head>
+<body>
+    <!-- Cursor Mágico -->
+    <div class="magic-cursor" aria-hidden="true"></div>
+    <div class="magic-cursor-trail" aria-hidden="true"></div>
+    
+    <!-- Partículas Flutuantes -->
+    <div id="particles-container" aria-hidden="true"></div>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Navegação principal">
+            <a href="#home" class="nav__logo" aria-label="Mundo Mágico - Página inicial">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Mundo Mágico</span>
+            </a>
+            
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="#home" class="nav__link active" role="menuitem">
+                        <i class="fas fa-home" aria-hidden="true"></i> Início
+                    </a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#about" class="nav__link" role="menuitem">
+                        <i class="fas fa-star" aria-hidden="true"></i> Sobre Nós
+                    </a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#services" class="nav__link" role="menuitem">
+                        <i class="fas fa-magic" aria-hidden="true"></i> Atividades
+                    </a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#gallery" class="nav__link" role="menuitem">
+                        <i class="fas fa-images" aria-hidden="true"></i> Galeria
+                    </a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#contact" class="nav__link" role="menuitem">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Contato
+                    </a>
+                </li>
+            </ul>
+            
+            <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero__background">
+                <div class="hero__clouds" aria-hidden="true">
+                    <div class="cloud cloud--1"></div>
+                    <div class="cloud cloud--2"></div>
+                    <div class="cloud cloud--3"></div>
+                </div>
+                <div class="hero__rainbow" aria-hidden="true"></div>
+                <div class="hero__stars" aria-hidden="true"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <span class="hero__badge animate-bounce">
+                        <i class="fas fa-sparkles"></i> Bem-vindos ao
+                    </span>
+                    <h1 id="hero-title" class="hero__title">
+                        <span class="title-line">Mundo</span>
+                        <span class="title-line title-line--magic">Mágico</span>
+                        <span class="title-emoji">✨🦄🌈</span>
+                    </h1>
+                    <p class="hero__description">
+                        Um lugar encantado onde a <strong>diversão</strong> e o <strong>aprendizado</strong> 
+                        se encontram! Venha viver experiências inesquecíveis com a gente!
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#services" class="btn btn--primary btn--magic">
+                            <span>Explorar Aventuras</span>
+                            <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <span>Fale Conosco</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="hero__mascot">
+                        <div class="mascot-container">
+                            <div class="mascot-unicorn" aria-label="Unicórnio mágico mascote">
+                                🦄
+                            </div>
+                            <div class="mascot-sparkles" aria-hidden="true">
+                                <span>✨</span>
+                                <span>⭐</span>
+                                <span>💫</span>
+                                <span>🌟</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements" aria-hidden="true">
+                        <span class="float-item float-item--1">🎈</span>
+                        <span class="float-item float-item--2">🎨</span>
+                        <span class="float-item float-item--3">🎪</span>
+                        <span class="float-item float-item--4">🎠</span>
+                        <span class="float-item float-item--5">🎡</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="hero__scroll" aria-label="Rolar para próxima seção">
+                <span class="scroll-text">Role para baixo</span>
+                <div class="scroll-icon">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">🌟 Conheça nossa história</span>
+                    <h2 id="about-title" class="section__title">
+                        Sobre o <span class="text-gradient">Mundo Mágico</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Criamos experiências únicas que fazem os olhinhos brilharem!
+                    </p>
+                </header>
+                
+                <div class="about__content">
+                    <div class="about__image">
+                        <div class="image-frame">
+                            <div class="image-placeholder">
+                                <span class="placeholder-emoji">🏰</span>
+                                <span class="placeholder-text">Nosso Castelo Mágico</span>
+                            </div>
+                            <div class="image-decorations" aria-hidden="true">
+                                <span class="deco deco--1">⭐</span>
+                                <span class="deco deco--2">🌙</span>
+                                <span class="deco deco--3">💖</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__text">
+                        <div class="about__card">
+                            <div class="card-icon">🎭</div>
+                            <h3>Nossa Missão</h3>
+                            <p>
+                                Transformar cada momento em uma aventura inesquecível! 
+                                Acreditamos que brincar é a melhor forma de aprender e crescer.
+                            </p>
+                        </div>
+                        
+                        <div class="about__card">
+                            <div class="card-icon">💝</div>
+                            <h3>Nossos Valores</h3>
+                            <p>
+                                Amor, criatividade e muita magia! Cada criança é especial 
+                                e merece viver experiências que ficarão para sempre na memória.
+                            </p>
+                        </div>
+                        
+                        <div class="about__card">
+                            <div class="card-icon">🌈</div>
+                            <h3>Nossa Promessa</h3>
+                            <p>
+                                Garantimos sorrisos, risadas e olhinhos brilhando! 
+                                Um ambiente seguro e cheio de encanto para todas as crianças.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats -->
+                <div class="about__stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">😊</div>
+                        <span class="stat-number" data-target="5000">0</span>
+                        <span class="stat-label">Crianças Felizes</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎉</div>
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Festas Realizadas</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⭐</div>
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Atividades Mágicas</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">💖</div>
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Anos de Magia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section section--colored" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">🎪 Diversão garantida!</span>
+                    <h2 id="services-title" class="section__title">
+                        Nossas <span class="text-gradient">Atividades Mágicas</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Escolha sua aventura favorita e venha se divertir!
+                    </p>
+                </header>
+                
+                <div class="services__grid">
+                    <!-- Service Card 1 -->
+                    <article class="service-card" data-tilt>
+                        <div class="service-card__icon">
+                            <span>🎨</span>
+                        </div>
+                        <h3 class="service-card__title">Arte & Criatividade</h3>
+                        <p class="service-card__description">
+                            Pintura, desenho, massinha e muito mais! Solte a imaginação 
+                            e crie obras de arte incríveis.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Pintura em tela</li>
+                            <li><i class="fas fa-check-circle"></i> Desenho livre</li>
+                            <li><i class="fas fa-check-circle"></i> Artesanato</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 2 -->
+                    <article class="service-card service-card--featured" data-tilt>
+                        <div class="service-card__badge">⭐ Mais Popular!</div>
+                        <div class="service-card__icon">
+                            <span>🎉</span>
+                        </div>
+                        <h3 class="service-card__title">Festas Temáticas</h3>
+                        <p class="service-card__description">
+                            Aniversários mágicos com temas incríveis! Princesas, 
+                            super-heróis, unicórnios e muito mais!
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Decoração temática</li>
+                            <li><i class="fas fa-check-circle"></i> Brincadeiras exclusivas</li>
+                            <li><i class="fas fa-check-circle"></i> Personagens vivos</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 3 -->
+                    <article class="service-card" data-tilt>
+                        <div class="service-card__icon">
+                            <span>🎭</span>
+                        </div>
+                        <h3 class="service-card__title">Teatro & Música</h3>
+                        <p class="service-card__description">
+                            Aulas de teatro, musicalização e contação de histórias 
+                            que encantam e desenvolvem talentos!
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Aulas de teatro</li>
+                            <li><i class="fas fa-check-circle"></i> Musicalização infantil</li>
+                            <li><i class="fas fa-check-circle"></i> Contação de histórias</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 4 -->
+                    <article class="service-card" data-tilt>
+                        <div class="service-card__icon">
+                            <span>🧩</span>
+                        </div>
+                        <h3 class="service-card__title">Jogos Educativos</h3>
+                        <p class="service-card__description">
+                            Aprender brincando é mais divertido! Jogos que estimulam 
+                            o raciocínio e a criatividade.
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Quebra-cabeças gigantes</li>
+                            <li><i class="fas fa-check-circle"></i> Jogos de tabuleiro</li>
+                            <li><i class="fas fa-check-circle"></i> Desafios em grupo</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 5 -->
+                    <article class="service-card" data-tilt>
+                        <div class="service-card__icon">
+                            <span>🤸</span>
+                        </div>
+                        <h3 class="service-card__title">Esportes & Movimento</h3>
+                        <p class="service-card__description">
+                            Atividades físicas divertidas que desenvolvem 
+                            coordenação e trabalho em equipe!
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Mini-olimpíadas</li>
+                            <li><i class="fas fa-check-circle"></i> Dança infantil</li>
+                            <li><i class="fas fa-check-circle"></i> Circuito de aventuras</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 6 -->
+                    <article class="service-card" data-tilt>
+                        <div class="service-card__icon">
+                            <span>🔬</span>
+                        </div>
+                        <h3 class="service-card__title">Ciência Divertida</h3>
+                        <p class="service-card__description">
+                            Experimentos incríveis que parecem mágica! 
+                            Descubra o cientista que existe em você!
+                        </p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check-circle"></i> Experimentos químicos</li>
+                            <li><i class="fas fa-check-circle"></i> Robótica básica</li>
+                            <li><i class="fas fa-check-circle"></i> Astronomia kids</li>
+                        </ul>
+                        <a href="#contact" class="service-card__btn">
+                            Quero participar! <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section" aria-labelledby="gallery-title">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">📸 Momentos especiais</span>
+                    <h2 id="gallery-title" class="section__title">
+                        Nossa <span class="text-gradient">Galeria Mágica</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Veja alguns dos momentos encantadores que já vivemos!
+                    </p>
+                </header>
+                
+                <div class="gallery__filters" role="tablist" aria-label="Filtros da galeria">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                        <i class="fas fa-sparkles"></i> Todos
+                    </button>
+                    <button class="filter-btn" data-filter="festas" role="tab" aria-selected="false">
+                        <i class="fas fa-birthday-cake"></i> Festas
+                    </button>
+                    <button class="filter-btn" data-filter="atividades" role="tab" aria-selected="false">
+                        <i class="fas fa-palette"></i> Atividades
+                    </button>
+                    <button class="filter-btn" data-filter="eventos" role="tab" aria-selected="false">
+                        <i class="fas fa-calendar-star"></i> Eventos
+                    </button>
+                </div>
+                
+                <div class="gallery__grid">
+                    <div class="gallery__item" data-category="festas">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🎂</span>
+                            <span class="gallery__label">Festa de Aniversário</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item gallery__item--wide" data-category="atividades">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🎨</span>
+                            <span class="gallery__label">Oficina de Arte</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item" data-category="eventos">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🎪</span>
+                            <span class="gallery__label">Evento Especial</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item" data-category="festas">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🦄</span>
+                            <span class="gallery__label">Festa Unicórnio</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item" data-category="atividades">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🎭</span>
+                            <span class="gallery__label">Teatro Infantil</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item gallery__item--tall" data-category="eventos">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🎡</span>
+                            <span class="gallery__label">Dia das Crianças</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item" data-category="atividades">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🔬</span>
+                            <span class="gallery__label">Ciência Divertida</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery__item" data-category="festas">
+                        <div class="gallery__placeholder">
+                            <span class="gallery__emoji">🦸</span>
+                            <span class="gallery__label">Festa Super-Heróis</span>
+                        </div>
+                        <div class="gallery__overlay">
+                            <span class="gallery__zoom"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section section--colored" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">💬 O que dizem sobre nós</span>
+                    <h2 id="testimonials-title" class="section__title">
+                        <span class="text-gradient">Depoimentos</span> de Famílias Felizes
+                    </h2>
+                </header>
+                
+                <div class="testimonials__carousel">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars" aria-label="5 estrelas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__text">
+                            "Minha filha não para de falar da festa! Foi simplesmente mágico! 
+                            A decoração, as brincadeiras, tudo perfeito! Muito obrigada! 💖"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <strong>Maria Silva</strong>
+                                <span>Mãe da Sophia, 6 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars" aria-label="5 estrelas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__text">
+                            "O Pedro ama as aulas de ciência! Ele fica tão animado contando 
+                            os experimentos que fez. Vocês são incríveis! 🔬✨"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <strong>Carlos Oliveira</strong>
+                                <span>Pai do Pedro, 8 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars" aria-label="5 estrelas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__text">
+                            "Ambiente super seguro e acolhedor! As crianças se divertem muito 
+                            e a gente fica tranquilo sabendo que estão bem cuidadas! 🌈"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <strong>Ana Costa</strong>
+                                <span>Mãe do Lucas e da Julia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__nav" aria-label="Navegação dos depoimentos">
+                    <button class="testimonial-nav-btn" data-direction="prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials__dots">
+                        <button class="dot active" aria-label="Depoimento 1"></button>
+                        <button class="dot" aria-label="Depoimento 2"></button>
+                        <button class="dot" aria-label="Depoimento 3"></button>
+                    </div>
+                    <button class="testimonial-nav-btn" data-direction="next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">📬 Vamos conversar!</span>
+                    <h2 id="contact-title" class="section__title">
+                        Entre em <span class="text-gradient">Contato</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Estamos ansiosos para fazer parte dos momentos especiais da sua família!
+                    </p>
+                </header>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-card__content">
+                                <h3>Nosso Endereço</h3>
+                                <p>Rua das Estrelas, 123<br>Bairro Encantado - São Paulo/SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-card__content">
+                                <h3>Telefone</h3>
+                                <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-card__content">
+                                <h3>E-mail</h3>
+                                <p><a href="mailto:contato@mundomagico.com.br">contato@mundomagico.com.br</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-card__content">
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábados: 9h às 17h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <h3>Siga-nos nas redes!</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link social-link--instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link social-link--facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link social-link--youtube" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-link social-link--tiktok" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form" novalidate>
+                        <div class="form-header">
+                            <span class="form-emoji">✉️</span>
+                            <h3>Envie sua mensagem!</h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user"></i> Nome do responsável
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Seu nome completo"
+                                required
+                                autocomplete="name"
+                            >
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i> E-mail
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="seu@email.com"
+                                required
+                                autocomplete="email"
+                            >
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                <i class="fas fa-phone"></i> Telefone
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input" 
+                                placeholder="(11) 99999-9999"
+                                autocomplete="tel"
+                            >
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">
+                                <i class="fas fa-magic"></i> Qual atividade te interessa?
+                            </label>
+                            <select id="service" name="service" class="form-input form-select">
+                                <option value="">Selecione uma opção...</option>
+                                <option value="arte">🎨 Arte & Criatividade</option>
+                                <option value="festas">🎉 Festas Temáticas</option>
+                                <option value="teatro">🎭 Teatro & Música</option>
+                                <option value="jogos">🧩 Jogos Educativos</option>
+                                <option value="esportes">🤸 Esportes & Movimento</option>
+                                <option value="ciencia">🔬 Ciência Divertida</option>
+                                <option value="outro">✨ Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <i class="fas fa-comment-dots"></i> Sua mensagem
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                placeholder="Conte-nos mais sobre o que você procura! 💫"
+                                rows="4"
+                                required
+                            ></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--magic btn--full">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                        </button>
+                        
+                        <div class="form-success" aria-live="polite">
+                            <span class="success-icon">🎉</span>
+                            <p>Mensagem enviada com sucesso! Entraremos em contato em breve!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__waves" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">
+                        <span class="logo-icon">✨</span>
+                        <span class="logo-text">Mundo Mágico</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Onde sonhos viram realidade e cada dia é uma nova aventura!
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Atividades</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Atividades</h4>
+                    <ul>
+                        <li><a href="#services">Arte & Criatividade</a></li>
+                        <li><a href="#services">Festas Temáticas</a></li>
+                        <li><a href="#services">Teatro & Música</a></li>
+                        <li><a href="#services">Jogos Educativos</a></li>
+                        <li><a href="#services">Ciência Divertida</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__newsletter">
+                    <h4>Receba Novidades!</h4>
+                    <p>Cadastre-se para receber promoções e novidades mágicas!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input 
+                            type="email" 
+                            placeholder="seu@email.com" 
+                            required
+                            aria-label="E-mail para newsletter"
+                        >
+                        <button type="submit" aria-label="Inscrever-se">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Mundo Mágico. Todos os direitos reservados. Feito com 💖 para crianças felizes!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen" aria-hidden="true">
+        <div class="loader">
+            <div class="loader__magic">✨</div>
+            <p class="loader__text">Preparando a magia...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</body>
+</html>
